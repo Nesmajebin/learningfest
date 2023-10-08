@@ -1,0 +1,21 @@
+<html>
+<head><title>
+task2</title>
+<body>
+<p>The ol tag defines an ordered list:</p>
+
+<ol>
+<li>cf</li>
+<li>maths</li>
+<li>language</li></ol>
+
+<p>The ul tag defines an unordered list:</p>
+<ul>
+
+<li>cf</li>
+<li>maths</li>
+<li>language</li>
+<ul>
+
+</body>
+</html>
