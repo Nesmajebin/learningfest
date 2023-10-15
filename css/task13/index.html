@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>
+		How to create 3 boxes
+		in the same div using
+		HTML and CSS ?
+	</title>
+
+	<style>
+		.boxes{
+			display: flex;
+			width: 500px;
+			height: 500px;
+			border: 1px transparent;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+		.box{
+			width: 10px;
+			height: 10px;
+			border: 1px solid black;
+			padding: 40px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.box:nth-child(6),.box:nth-child(7),.box:nth-child(10),.box:nth-child(11){
+			border: 1px transparent;
+
+		}
+		
+	</style>
+</head>
+
+<body>
+	<h3>Arrange the boxes(created with div element) to form a frame.</h3>
+	<div class="boxes">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		
+	
+	</div>
+</body>
+
+</html>
