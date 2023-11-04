@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Dice Simulator 2015</title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+  <p id="placeholder">
+  
+  </p>
+  <button id="button">Roll Dice</button>
+ 
+  <script>
+    var dice = {
+    sides: 6,
+    roll: function () {
+      var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+      return randomNumber;
+    }
+  }
+  
+  
+  
+  //Prints dice roll to the page
+  
+  function printNumber(number) {
+    var placeholder = document.getElementById('placeholder');
+    placeholder.innerHTML = number;
+  }
+  
+  var button = document.getElementById('button');
+  
+  button.onclick = function() {
+    var result = dice.roll();
+    printNumber(result);
+  };
+  
+  </script>
+</body>
+</html>
